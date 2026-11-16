@@ -13,10 +13,6 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1E8B4013596A22FB210BC4B1 /* FitnessCoach */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			explicitFileTypes = {
-			};
-			explicitFolders = (
-			);
 			path = FitnessCoach;
 			sourceTree = "<group>";
 		};
