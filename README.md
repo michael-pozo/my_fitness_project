@@ -1,19 +1,23 @@
 # My Fitness Project
 
-An iPhone app that recommends workouts and tracks your progress over time.
+A personal iPhone app with Claude built in. Tell Claude your fitness goal in the app, get a workout routine, log your workouts against it, and get recommendations based on what you actually lifted.
 
-## Goals
+📄 **Full requirements:** [docs/PRD.md](docs/PRD.md)
 
-- **Workout recommendations**: suggest workouts based on your goals, fitness level, and recent activity.
-- **Progress tracking**: log workouts (exercises, sets, reps, weight, duration) and see how you improve.
-- **History & insights**: review past sessions and track trends such as volume, personal records, and consistency.
+## How It Works
 
-## Tech Stack (planned)
+1. **Chat:** describe your goal to Claude in the app (e.g. "stronger legs for ski season, 3 days a week, full gym").
+2. **Routine:** Claude creates a structured routine, which is saved in the app once you confirm it.
+3. **Log:** record each set (weight, reps and how many reps you had left). Works offline.
+4. **Improve:** Claude reviews your logs and suggests weight/rep increases or routine changes. You accept or decline each one.
+5. **Progress:** see your strength trend for each exercise over time.
+
+## Tech Stack
 
 - **Language:** Swift
 - **UI:** SwiftUI
-- **Persistence:** SwiftData
-- **Health data:** HealthKit (optional integration)
+- **Storage:** SwiftData (on the phone only)
+- **AI:** Claude API (`claude-opus-5-5`), called directly over HTTPS
 - **Target:** iOS 17+
 
 ## Getting Started
@@ -21,9 +25,12 @@ An iPhone app that recommends workouts and tracks your progress over time.
 ### Requirements
 
 - macOS with the latest version of [Xcode](https://developer.apple.com/xcode/)
-- An iPhone or the iOS Simulator
+- An iPhone (installed with a free Apple account; re-run from Xcode every 7 days, and your data is kept)
+- An [Anthropic API key](https://console.anthropic.com/) for the chat and recommendations
 
 ### Setup
+
+> The Xcode project hasn't been created yet; these steps apply once it exists.
 
 ```bash
 git clone https://github.com/michael-pozo/my_fitness_project.git
@@ -31,17 +38,20 @@ cd my_fitness_project
 open *.xcodeproj
 ```
 
-Then choose a simulator or device in Xcode and press **Run** (⌘R).
+Choose your iPhone in Xcode and press **Run** (⌘R). In the app, open **Settings** and paste your API key.
+
+> **Never commit your API key.** This repo is public. The app stores the key in the iPhone Keychain, not in code.
 
 ## Project Status
 
-🚧 Early development: project scaffolding in progress.
+🚧 Requirements defined; development not started.
 
 ## Roadmap
 
-- [ ] Create the Xcode project and basic app structure
-- [ ] Define data models (Workout, Exercise, Set, UserProfile)
-- [ ] Workout logging UI
-- [ ] Progress history and charts
-- [ ] Workout recommendation engine
-- [ ] HealthKit integration
+- [ ] Create the Xcode project and run it on the iPhone
+- [ ] Data model and manual routine entry
+- [ ] Workout logging (sets, reps in reserve, exercise swaps), offline
+- [ ] Settings: API key in the Keychain
+- [ ] Chat with Claude and routine creation
+- [ ] Recommendations with safety checks and Accept/Decline
+- [ ] Progress screens
