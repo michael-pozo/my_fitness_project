@@ -48,13 +48,13 @@ The Xcode project is generated from [`project.yml`](project.yml) by [XcodeGen](h
 
 ## Project Status
 
-🚧 Routines can be created and edited by hand; workout logging is next.
+🚧 Routines can be entered by hand and workouts logged; connecting Claude is next.
 
 ## Roadmap
 
 - [x] Create the Xcode project and run it on the iPhone
 - [x] Data model and manual routine entry
-- [ ] Workout logging (sets, reps in reserve, exercise swaps), offline
+- [x] Workout logging (sets, reps in reserve, exercise swaps), offline
 - [ ] Settings: API key in the Keychain
 - [ ] Chat with Claude and routine creation
 - [ ] Recommendations with safety checks and Accept/Decline
