@@ -5,12 +5,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            PlaceholderScreen(
-                title: "Workouts",
-                systemImage: "dumbbell",
-                message: "Your routine and today's workout will appear here."
-            )
-            .tabItem { Label("Workouts", systemImage: "dumbbell") }
+            WorkoutsView()
+                .tabItem { Label("Workouts", systemImage: "dumbbell") }
 
             PlaceholderScreen(
                 title: "Coach",
@@ -56,4 +52,5 @@ struct PlaceholderScreen: View {
 
 #Preview {
     ContentView()
+        .modelContainer(for: [Routine.self, Session.self], inMemory: true)
 }
