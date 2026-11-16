@@ -26,7 +26,7 @@ A personal iPhone app with Claude built in. Tell Claude your fitness goal in the
 
 - macOS with the latest version of [Xcode](https://developer.apple.com/xcode/)
 - An iPhone (installed with a free Apple account; re-run from Xcode every 7 days, and your data is kept)
-- An [Anthropic API key](https://console.anthropic.com/) for the chat and recommendations
+- An [Anthropic API key](https://console.anthropic.com/) for the chat and recommendations. When creating it, choose **"Somewhere else"** for where your code runs: the "Your own machine" option offers a computer sign-in instead of a key, which the iPhone app can't use.
 
 ### Setup
 
@@ -48,14 +48,14 @@ The Xcode project is generated from [`project.yml`](project.yml) by [XcodeGen](h
 
 ## Project Status
 
-🚧 Routines can be entered by hand and workouts logged; connecting Claude is next.
+🚧 Routines can be entered by hand, workouts logged, and the API key saved; the Claude chat is next.
 
 ## Roadmap
 
 - [x] Create the Xcode project and run it on the iPhone
 - [x] Data model and manual routine entry
 - [x] Workout logging (sets, reps in reserve, exercise swaps), offline
-- [ ] Settings: API key in the Keychain
+- [x] Settings: API key in the Keychain
 - [ ] Chat with Claude and routine creation
 - [ ] Recommendations with safety checks and Accept/Decline
 - [ ] Progress screens
