@@ -25,6 +25,7 @@ targets:
         CURRENT_PROJECT_VERSION: "1"
         TARGETED_DEVICE_FAMILY: "1"
         CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ZZF6L6R3TB # Michael Pozo (Personal Team), free account
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         INFOPLIST_KEY_UILaunchScreen_Generation: YES

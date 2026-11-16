@@ -73,6 +73,7 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					D0827844BCFD6DDE8326613F = {
+						DevelopmentTeam = ZZF6L6R3TB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,6 +126,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZF6L6R3TB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fitness Coach";
@@ -213,6 +215,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZF6L6R3TB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fitness Coach";

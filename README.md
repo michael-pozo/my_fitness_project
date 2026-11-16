@@ -30,25 +30,29 @@ A personal iPhone app with Claude built in. Tell Claude your fitness goal in the
 
 ### Setup
 
-> The Xcode project hasn't been created yet; these steps apply once it exists.
-
 ```bash
 git clone https://github.com/michael-pozo/my_fitness_project.git
 cd my_fitness_project
-open *.xcodeproj
+open FitnessCoach.xcodeproj
 ```
 
-Choose your iPhone in Xcode and press **Run** (⌘R). In the app, open **Settings** and paste your API key.
+Choose your iPhone (or a simulator) in Xcode and press **Run** (⌘R). In the app, open **Settings** and paste your API key.
+
+**First install on an iPhone:** turn on Developer Mode (Settings → Privacy & Security → Developer Mode), and after installing, trust the developer under Settings → General → VPN & Device Management.
+
+### Project settings
+
+The Xcode project is generated from [`project.yml`](project.yml) by [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`). Change project settings in `project.yml`, then run `xcodegen` to regenerate. Settings changed in Xcode's own settings screens are overwritten the next time the project is regenerated.
 
 > **Never commit your API key.** This repo is public. The app stores the key in the iPhone Keychain, not in code.
 
 ## Project Status
 
-🚧 Requirements defined; development not started.
+🚧 App skeleton runs on the iPhone; features not built yet.
 
 ## Roadmap
 
-- [ ] Create the Xcode project and run it on the iPhone
+- [x] Create the Xcode project and run it on the iPhone
 - [ ] Data model and manual routine entry
 - [ ] Workout logging (sets, reps in reserve, exercise swaps), offline
 - [ ] Settings: API key in the Keychain
